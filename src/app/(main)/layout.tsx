@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Home Layout",
   description: "This is a page for Home",
+  keywords: ["nextjs", "react", "javascript", "web development"],
+  authors: [{ name: "Sina Koushki", url: "https://example.com/" }],
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function AuthLayout({
@@ -31,23 +35,25 @@ export default function AuthLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       >
         <header className="bg-blue-600 p-4 flex gap-2">
-            <Link href="/" className="text-lg font-bold text-white">
-                home
-            </Link>
-            <Link href="/about" className="text-lg font-bold text-white">
-                about
-            </Link>
-            <Link href="/contact" className="text-lg font-bold text-white">
-                contact
-            </Link>
-            <Link href="/products" className="text-lg font-bold text-white">
-                products
-            </Link>
+          <Link href="/" className="text-lg font-bold text-white">
+            home
+          </Link>
+          <Link href="/about" className="text-lg font-bold text-white">
+            about
+          </Link>
+          <Link href="/contact" className="text-lg font-bold text-white">
+            contact
+          </Link>
+          <Link href="/products" className="text-lg font-bold text-white">
+            products
+          </Link>
         </header>
-        <main className="p-6" style={{height:"89vh"}}>
-            {children}
+        <main className="p-6" style={{ height: "89vh" }}>
+          {children}
         </main>
-        <footer className="bg-blue-600 text-white p-4 text-md flex justify-center">My Website . All rights reserved</footer>
+        <footer className="bg-blue-600 text-white p-4 text-md flex justify-center">
+          My Website . All rights reserved
+        </footer>
       </body>
     </html>
   );

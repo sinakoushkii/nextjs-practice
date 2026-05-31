@@ -17,7 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Authentication Layout",
-  description: "This is a page for authentication",
+  description: "Login and Register pages layout for authentication",
+  keywords: ["authentication", "login", "register", "nextjs", "react"],
+  authors: [{ name: "Sina Koushki", url: "https://example.com/register" }],
+  robots: "noindex, nofollow",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function AuthLayout({
